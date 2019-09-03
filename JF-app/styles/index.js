@@ -43,27 +43,22 @@ export default styles = StyleSheet.create({
 
     button: {
         display: 'flex',
-        height: 55,
+        height: 62,
         borderRadius: 5,
         justifyContent: 'center',
         alignItems: 'center',
-        marginHorizontal:5,
-        marginVertical:5,
+        marginHorizontal:2,
+        marginVertical:2,
 
         backgroundColor: '#2AC062',
-        shadowColor: '#2AC062',
-        shadowOpacity: 0.4,
-        shadowOffset: { height: 10, width: 0 },
-        shadowRadius: 20,
     },
 
     primaryButton: {
         width: 165,
-        height: 65,
     },
 
     secondaryButton: {
-        width:65,
+        width:82,
     },
 
     text: {
