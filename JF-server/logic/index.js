@@ -82,9 +82,9 @@ const logic = {
         }
 
         if (time > 0 ){
-            board.wait(time, () => {
+            setTimeout(() =>{
                 motors.stop();
-              });
+              }, time);
             response.time = time
         }
 
