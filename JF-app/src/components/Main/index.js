@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Text} from 'react-native';
+import { Text } from 'react-native';
 import styles from '../../../styles'
 import Camera from '../Camera'
 import Controls from '../Controls'
