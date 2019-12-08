@@ -1,5 +1,5 @@
 import React from 'react';
-import { View,  } from 'react-native';
+import { View, } from 'react-native';
 import PrimaryButton from '../Buttons/PrimaryButton'
 import SecondaryButton from '../Buttons/SecondaryButton'
 import styles from '../../../styles'
@@ -8,7 +8,7 @@ function Controls({
     onStop,
     onMove
 }) {
-  const { controls, row } = styles
+    const { controls, row } = styles
 
     return (
         <View style={controls}>

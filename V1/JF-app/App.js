@@ -26,12 +26,9 @@ export default function App() {
             "time": 0
           })
         })
-        console.log(response.json())
         return response
       } catch (error) {
         setError(error.message)
-        console.log(error.message)
-        console.log(path)
       }
     })()
   }
@@ -53,12 +50,9 @@ export default function App() {
             "time": 0
           })
         })
-        console.log(response.json())
         return response
       } catch (error) {
         setError(error.message)
-        console.log(error.message)
-        console.log(path)
       }
     })()
   }

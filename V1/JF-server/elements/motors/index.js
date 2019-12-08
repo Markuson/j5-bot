@@ -14,48 +14,48 @@ const move ={
 
     forward(motors, vel) {
         motors.forward(vel)
-        return console.log('Moving forward!')
+        return 'Moving forward!'
     },
 
     reverse(motors, vel) {
         motors.reverse(vel)
-        return console.log('Moving backwards!')
+        return 'Moving backwards!'
     },
 
     right(motors, vel) {
         motors[1].forward(vel)
         motors[0].reverse(vel)
-        return console.log('Moving right!')
+        return 'Moving right!'
     },
 
     left(motors, vel) {
         motors[1].reverse(vel)
         motors[0].forward(vel)
-        return console.log('Moving left!')
+        return 'Moving left!'
     },
 
     diagonalFrontRight(motors, vel) {
         motors[1].forward(vel)
         motors[0].forward(Math.floor(vel/2))
-        return console.log('Moving diagonal right!')
+        return 'Moving diagonal right!'
     },
 
     diagonalFrontLeft(motors, vel) {
         motors[1].forward(Math.floor(vel/2))
         motors[0].forward(vel)
-        return console.log('Moving diagonal left!')
+        return 'Moving diagonal left!'
     },
 
     diagonalBackRight(motors, vel) {
         motors[1].reverse(vel)
         motors[0].reverse(Math.floor(vel/2))
-        return console.log('Moving diagonal right!')
+        return 'Moving diagonal right!'
     },
 
     diagonalBackLeft(motors, vel) {
         motors[1].reverse(Math.floor(vel/2))
         motors[0].reverse(vel)
-        return console.log('Moving diagonal left!')
+        return 'Moving diagonal left!'
     }
 
 }

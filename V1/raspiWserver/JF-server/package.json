@@ -1,0 +1,33 @@
+{
+  "name": "jf-server",
+  "version": "1.0.0",
+  "description": "johnny-fart central operations server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "watch": "nodemon .",
+    "debug": "node-inspect .",
+    "test": "mocha ./**/*.test.js --runInBand --timeout 40000",
+    "test:debug": "mocha debug ./**/*.test.js --runInBand",
+    "test:coverage": "nyc --reporter=html --reporter=text mocha ./**/*.test.js --timeout 40000"
+  },
+  "author": "Marcuson",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "etherport-client": "^0.1.4",
+    "express": "^4.17.1",
+    "jfs-call": "file:../jfs-call",
+    "jfs-errors": "file:../jfs-errors",
+    "jfs-validate": "file:../jfs-validate",
+    "johnny-five": "^1.2.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  }
+}

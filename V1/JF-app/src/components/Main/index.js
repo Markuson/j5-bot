@@ -6,8 +6,9 @@ import Controls from '../Controls'
 
 
 function Main({
-onStop,
-onMove
+    error,
+    onStop,
+    onMove
 }) {
     const { title } = styles
 
@@ -16,6 +17,9 @@ onMove
             <Text style={title}>JF-Bot</Text>
             <Camera />
             <Controls onStop={onStop} onMove={onMove} />
+            {error && <View>
+                <Text>{error}</Text>
+            </View>}
         </>
     );
 }
